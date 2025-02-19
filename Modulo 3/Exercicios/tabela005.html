@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .destaque {
+            background-color: lightgreen;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.cgrupo1 {
+            background-color: yellow;
+        }
+        col.cgrupo2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>  
+
+    <table>
+
+        <colgroup>
+            <col class="cgrupo1" span="2">
+            <col class="cgrupo2" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Gamer</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Harleyro</td>
+        </tr>
+    </table>
+</body>
+</html>
